@@ -1,0 +1,147 @@
+:root {
+    --main-font-color: #161A29;
+    --deep-blue: #0E2442;
+}
+
+@media screen and (max-width: 1200px) {
+    .category {
+        font-size: 1rem;
+        gap: 15px;
+        justify-content: flex-start;
+        overflow-x: auto;
+    }
+
+    .category  li {
+        font-size: 1.15rem;
+        margin: 0 0 0 10px;
+    }
+
+    .headline {
+        padding-bottom: 8px ;
+        line-height: .75;
+    }
+
+    .headline a {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 840px) {
+    .name {
+        font-size: 1.75rem;
+        margin: 0;
+    }
+
+    .logo {
+        margin: 10px 10px 10px -10px;
+    }
+
+    .date {
+        font-size: 1rem;
+        color: white;
+        margin: 0;
+    }
+
+    .category {
+        font-size: 1rem;
+        gap: 10px;
+    }
+
+    .headline {
+        padding-bottom: 8px ;
+        line-height: .7;
+    }
+
+    .headline a {
+        font-size: 1rem;   
+    }
+
+}
+
+@media screen and (max-width: 590px) {
+    .main {
+        width: 100%;
+    }
+    .header {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+    }
+
+    .header-branding {
+        margin: 0 0 0 50px;
+        height: 30px;
+    }
+
+    .name {
+        font-size: 1.5rem;
+        padding: 0;
+    }
+
+    .logo {
+        height: 65px;
+        width: 65px;
+    }
+
+    .date {
+        font-size: .9rem;
+        color: white;
+        margin: 0 0 0 50px;
+    }
+
+    .category-container {
+        width: 100%;
+    }
+
+    .category {
+        font-size: 1rem;
+        margin: 0;
+    }
+
+    .fixed-navbar {
+        overflow-x: hidden;
+    }
+
+    .headline {
+        padding-bottom: 5px ;
+        line-height: .5;
+    }
+
+    .news-grid {
+        margin: 5px 0 5px 80px;
+    }
+
+    .news-box {
+        height: 400px ;
+        width: 350px;
+    }
+
+    .headline a  {
+        font-size: .75rem;
+    }
+
+    .follow-news {
+        font-size: 1rem;
+        margin: 0 10px 0 0;
+    }
+    
+    .footer-logo {
+        height: 40px;
+        width: 40px;
+        margin: 5px -15px -15px 0;
+    }
+
+    .social-media {
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .social-media i {
+        font-size: 1.5rem;
+    }
+
+    .copyright {
+        font-size: .75rem;
+    }
+}

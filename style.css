@@ -1,0 +1,245 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+
+:root {
+    --main-font-color: #161A29;
+    --gold: #D4AF37;
+    --deep-blue: #0E2442;
+}
+
+@font-face {
+    font-family: 'merriweather';
+    src: url('merriweather/merriweather-regular.woff2') format('woff2'),
+         url('merriweather/merriweather-regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'open-sans';
+    src: url('open-sans/opensans-regular.woff2') format('woff2'),
+         url('open-sans/opensans-regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body {
+    background-color: white;
+    color: var(--main-font-color);
+}
+
+.main {
+    margin: -5px 0 100px;
+}
+
+.header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    height: 80px;
+    top: 0;
+    background-color: var(--deep-blue);
+    transition: top 400ms ease-in;
+}
+
+.header-branding {
+    display: flex;
+    align-items: center;
+    margin: 0 0 0 210px;
+}
+
+.name {
+    font-family: 'open-sans';
+    font-size: 2rem;
+    color: white;
+}
+
+.logo {
+    height: 70px;
+    width: 70px;
+    margin: 0 0 0 -15px;
+}
+
+.date {
+    font-size: 1rem;
+    color: white;
+    margin: 0 160px 0 auto;
+}
+
+.hide-header {
+    top:-80px;
+}
+
+.category-container {
+    position: absolute;
+    transition: top 410ms ease-in;
+    top: 90px;
+    width: 100%;
+}
+
+.fixed-navbar {
+    position: fixed;
+    transition: top 10ms ease-in;
+    top: 0px;
+    overflow-x: auto;
+}
+
+.category {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    font-family: 'merriweather';
+    background-color: silver;
+    transition: gap 300ms ease-out;
+}
+
+.fixed-category {
+    gap: 5px;
+    transition: gap 450ms ease-out;
+}
+
+.category  li {
+    list-style-type: none;
+    padding: 10px;
+    font-size: 1.25rem;
+}
+
+.category li:hover {
+    cursor: pointer;
+    color: var(--gold);
+    transition: color 300ms ease-out;
+}
+
+/* -------News Grid------- */
+
+.news-grid {
+    margin: 5px 100px 5px 200px;
+    list-style: none;
+    display: grid;
+    align-items: center;
+    justify-content: space-around;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 15px;
+    padding-inline-start: 0;
+}
+
+.news-box {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 400px;
+    width: 350px;
+    border-radius: 3px;
+    box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.2);
+}
+
+.headline {
+    padding-bottom: 10px;
+    text-align: center;
+    line-height: .75;
+    display: -webkit-box;          
+    -webkit-box-orient: block-axis;   
+    -webkit-line-clamp: 2;          
+    overflow: hidden;
+}
+
+.headline a {
+    font-family: 'open-sans';
+    font-size: 1rem;
+    text-decoration: none;
+    color: var(--main-font-color);
+}
+
+.headline a:hover, .source-url:hover {
+    text-decoration: none;
+    color: #0096FF;
+    transition: color 300ms ease-in;
+}
+
+.news-image {
+    height: 300px;
+    max-width: 100%;
+}
+
+.source-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.source-icon {
+    height: auto;
+    width: 20px;
+    margin:0 10px 0 0 ;
+}
+
+.source-url {
+    font-family: 'open-sans';
+    font-size: 1rem;   
+    display: inline;
+    color: var(--main-font-color);
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+}
+
+.load-more {
+    justify-content: center;
+    padding: 15px;
+    background-color: var(--deep-blue);
+    color: white;
+    font-family: 'merriweather';
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    margin: 20px 0 60px;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 10px;
+    background-color: var(--deep-blue);
+    height: 150px;
+    width: 100%;
+    color: white;
+    font-family: 'open-sans';
+}
+
+.follow-news {
+    font-size: 1.5rem;
+    margin: 0 10px 0 0;
+}
+
+.footer-logo {
+    height: 50px;
+    width: 50px;
+    margin: 5px -15px -15px 0;
+}
+
+.social-media {
+    display: flex;
+    justify-content: space-around;
+    width: 250px;
+}
+
+.social-media i {
+    font-size: 1.75rem;
+}
+
+.social-media i:hover {
+    cursor: pointer;
+    color: var(--gold);
+    transition: color 300ms ease-out;
+}
+
